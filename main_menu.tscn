@@ -1,0 +1,202 @@
+[gd_scene format=3 uid="uid://bq6a5hr7xq6dp"]
+
+[ext_resource type="Script" uid="uid://bxeqdyxdd1ddc" path="res://main_menu.gd" id="1_06t4h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xw5fr"]
+bg_color = Color(0.6741781, 0.4892571, 0.9347867, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[node name="main" type="Control" unique_id=998754967]
+custom_minimum_size = Vector2(1000, 500)
+layout_mode = 3
+anchor_right = 0.99600005
+anchor_bottom = 1.83
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 7.999939
+offset_bottom = -1244.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1586561683]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 660.0
+offset_right = 550.0
+offset_bottom = 968.0
+theme_override_constants/separation = 10
+
+[node name="button7" type="Button" parent="VBoxContainer2" unique_id=1305171048]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
+text = "🦑"
+
+[node name="button6" type="Button" parent="VBoxContainer2" unique_id=1106308606]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
+text = "🧙‍♂️"
+
+[node name="button5" type="Button" parent="VBoxContainer2" unique_id=1029612653]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
+text = "🧑‍🤝‍🧑"
+
+[node name="button4boss1" type="Button" parent="." unique_id=1850828327]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = 243.5
+offset_right = 100.0
+offset_bottom = 343.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
+text = "Boss Fight 1"
+
+[node name="button8boss2" type="Button" parent="." unique_id=2055620897]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -196.5
+offset_right = 100.0
+offset_bottom = -96.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
+text = "Boss Fight 2"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=827090880]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 220.0
+offset_right = 550.0
+offset_bottom = 540.0
+theme_override_constants/separation = 10
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="button10" type="Button" parent="VBoxContainer" unique_id=1855395505]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
+text = "🦑"
+
+[node name="button9" type="Button" parent="VBoxContainer" unique_id=1494031288]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
+text = "🧙‍♂️"
+
+[node name="button11" type="Button" parent="VBoxContainer" unique_id=539760323]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
+text = "🧑‍🤝‍🧑"
+
+[node name="button12boss3" type="Button" parent="." unique_id=2045395268]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 400.0
+offset_top = 110.0
+offset_right = 600.0
+offset_bottom = 210.0
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
+text = "Boss Fight 3"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="." unique_id=441664049]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 1100.0
+offset_right = 550.0
+offset_bottom = 1408.0
+theme_override_constants/separation = 10
+
+[node name="button2" type="Button" parent="VBoxContainer3" unique_id=169876151]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
+text = "🦑"
+
+[node name="button1bottom" type="Button" parent="VBoxContainer3" unique_id=623374862]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
+text = "🧙‍♂️"
+
+[node name="button3" type="Button" parent="VBoxContainer3" unique_id=694459205]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
+text = "🧑‍🤝‍🧑"
+
+[node name="button13bigboss" type="Button" parent="." unique_id=593470713]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.033
+anchor_right = 0.5
+anchor_bottom = 0.042000003
+offset_left = -177.00002
+offset_top = -49.467
+offset_right = 177.0
+offset_bottom = 37.041996
+grow_horizontal = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
+action_mode = 0
+text = "Final Boss"
+
+[connection signal="pressed" from="VBoxContainer2/button7" to="." method="_on_button_7_pressed"]
+[connection signal="pressed" from="VBoxContainer2/button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="VBoxContainer2/button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="button4boss1" to="." method="_on_button_4_boss_1_pressed"]
+[connection signal="pressed" from="button8boss2" to="." method="_on_button_8_boss_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/button10" to="." method="_on_button_10_pressed"]
+[connection signal="pressed" from="VBoxContainer/button9" to="." method="_on_button_9_pressed"]
+[connection signal="pressed" from="VBoxContainer/button11" to="." method="_on_button_11_pressed"]
+[connection signal="pressed" from="button12boss3" to="." method="_on_button_12_boss_3_pressed"]
+[connection signal="pressed" from="VBoxContainer3/button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer3/button1bottom" to="." method="_on_button_1_bottom_pressed"]
+[connection signal="pressed" from="VBoxContainer3/button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="button13bigboss" to="." method="_on_button_13_bigboss_pressed"]
