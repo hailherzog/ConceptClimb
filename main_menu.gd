@@ -1,9 +1,25 @@
 extends Control
 
-
 # Called when the node enters the scene tree for the first time.
-#func _ready() -> void:
-	#pass # Replace with function body.
+func _ready() -> void:
+	var questions = QuestionDataStructure.new()
+	loadQuestions("user://testQuesions.txt",questions)
+
+
+# imports questions from file path
+func loadQuestions(file_path: String,Questions: QuestionDataStructure) -> void:
+	if FileAccess.file_exists(file_path):
+		var file = FileAccess.open(file_path, FileAccess.READ);
+		if file:
+			var nextQ
+			var text = file.get_as_text().rsplit("\n",true)
+			for i in text.size():
+				nextQ = Question.new()
+				nextQ.setQuestion(text[i])
+				Questions.addQuestion(nextQ)
+			file.close()
+	else:
+		print("File does not exist: ", file_path)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
