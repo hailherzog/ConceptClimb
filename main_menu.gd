@@ -3,7 +3,7 @@ extends Control
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	var questions = QuestionDataStructure.new()
-	loadQuestions("user://testQuesions.txt",questions)
+	loadQuestions("user://quesions.txt",questions)
 
 
 # imports questions from file path

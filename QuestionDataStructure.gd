@@ -15,3 +15,10 @@ func addQuestion(question: Question) ->void:
 	
 func getQuestion() -> Question:
 	return questions.pick_random()
+
+func removeQuestion(question: Question)-> Question:
+	for i in questions:
+		if questions[i]==question:
+			questions.remove_at(i)
+			return question
+	return null
