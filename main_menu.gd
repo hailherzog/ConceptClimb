@@ -30,7 +30,7 @@ func loadQuestions(file_path: String,Questions: QuestionDataStructure) -> void:
 
 	#get_tree().change_scene_to_file(path to scene)
 func _on_button_13_bigboss_pressed() -> void:
-	print("push big boss")
+	print("push big finsl")
 	pass # this is the big boss button
 
 func _on_button_12_boss_3_pressed() -> void:
