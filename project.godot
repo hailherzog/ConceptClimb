@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ConceptClimb"
-run/main_scene="uid://bq6a5hr7xq6dp"
+run/main_scene="uid://bsh85jhugpqng"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
