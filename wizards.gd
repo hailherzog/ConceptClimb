@@ -14,3 +14,8 @@ func _process(delta: float) -> void:
 func _on_node_2d_draw() -> void:
 	
 	pass # Replace with function body.
+
+
+func _on_top_right_pressed() -> void:
+	print("pushed tr")
+	pass # Replace with function body.

@@ -75,6 +75,7 @@ func _on_button_2_pressed() -> void:
 	pass # bottom squid button
 	
 func _on_button_1_bottom_pressed() -> void:
+	get_tree().change_scene_to_file("res://wizards.tscn")
 	print("bottom wizard")
 	pass # bottom wizard button
 
