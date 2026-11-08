@@ -13,7 +13,8 @@ func loadQuestions(file_path: String,Questions: QuestionDataStructure) -> void:
 		if file:
 			var nextQ
 			var text = file.get_as_text().rsplit("\n",true)
-			for i in text.size():
+			#handles each question
+			for i in text.size()-1:
 				nextQ = Question.new()
 				nextQ.setQuestion(text[i])
 				Questions.addQuestion(nextQ)

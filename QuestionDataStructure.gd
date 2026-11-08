@@ -5,17 +5,19 @@ var questions = []
 func _ready() -> void:
 	pass # Replace with function body.
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
+#adds a question to the array
 func addQuestion(question: Question) ->void:
 	questions.append(question)
-	
-func getQuestion() -> Question:
-	return questions.pick_random()
 
+#gets a random question unless one is specified	
+func getQuestion(i: int=-1) -> Question:
+	return questions.pick_random() if i==-1 else questions.get(i)
+
+#removes a question from the array
 func removeQuestion(question: Question)-> Question:
 	for i in questions:
 		if questions[i]==question:
