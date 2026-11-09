@@ -19,3 +19,7 @@ func _on_node_2d_draw() -> void:
 func _on_top_right_pressed() -> void:
 	print("pushed tr")
 	pass # Replace with function body.
+
+
+func _on_button_quit_pressed() -> void:
+	get_tree().quit()
