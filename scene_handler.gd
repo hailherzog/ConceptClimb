@@ -1,6 +1,6 @@
 extends Node
 
-@export var start_menu_packed: PackedScene
+@export var start_menu_packed= preload("res://start_menu.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
