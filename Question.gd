@@ -15,7 +15,8 @@ func setPrompt(prompt: String) -> void:
 	
 #sets the array of correct indexs
 func setCorrectIndexs(CorrectIndexs: Array) -> void:
-	self.correctIndexs = correctIndexs
+	print("here")
+	self.correctIndexs = CorrectIndexs
 	
 #sets the set of potental responces to the question
 func setResponces(responces: Array) -> void:
