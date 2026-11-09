@@ -1,36 +1,49 @@
 [gd_scene format=3 uid="uid://euyt7ge41vdj"]
 
+[ext_resource type="Script" uid="uid://nbcqnbj8dcaf" path="res://study_scene.gd" id="1_e3y3y"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e3y3y"]
+bg_color = Color(0.6741781, 0.4892571, 0.9347867, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
 [node name="study_scene" type="Node2D" unique_id=1990409757]
+script = ExtResource("1_e3y3y")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=165120645]
-offset_left = -14.0
-offset_top = -15.0
-offset_right = 1020.0
-offset_bottom = 1527.0
-color = Color(1, 0.59607846, 1, 1)
+offset_left = -13.0
+offset_top = -7.0
+offset_right = 1021.0
+offset_bottom = 1535.0
+color = Color(0.7019608, 0, 0.72156864, 0.6745098)
 
 [node name="reveal_answer" type="Button" parent="." unique_id=590805274]
-offset_left = 550.0
-offset_top = 525.0
-offset_right = 849.0
-offset_bottom = 691.0
+offset_left = 544.0
+offset_top = 557.0
+offset_right = 843.0
+offset_bottom = 723.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 30
 text = "Reveal
 Answer"
 
 [node name="move_right" type="Button" parent="." unique_id=1127815395]
-offset_left = 555.0
-offset_top = 714.0
-offset_right = 652.0
-offset_bottom = 776.0
+offset_left = 536.0
+offset_top = 763.0
+offset_right = 633.0
+offset_bottom = 825.0
 theme_override_font_sizes/font_size = 20
 text = "->"
 
 [node name="move_left" type="Button" parent="." unique_id=1748926985]
-offset_left = 451.0
-offset_top = 715.0
-offset_right = 548.0
-offset_bottom = 775.0
+offset_left = 432.0
+offset_top = 764.0
+offset_right = 529.0
+offset_bottom = 824.0
 theme_override_font_sizes/font_size = 20
 text = "<-
 "
@@ -39,20 +52,20 @@ text = "<-
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 280.0
-offset_top = 428.0
-offset_right = 789.0
-offset_bottom = 483.0
+offset_left = 274.0
+offset_top = 460.0
+offset_right = 783.0
+offset_bottom = 515.0
 grow_horizontal = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 40
 text = "You are on question # of #"
 
 [node name="question_background" type="ColorRect" parent="." unique_id=831113880]
-offset_left = 253.0
-offset_top = 526.0
-offset_right = 521.0
-offset_bottom = 692.0
+offset_left = 247.0
+offset_top = 558.0
+offset_right = 515.0
+offset_bottom = 724.0
 color = Color(1, 0.9098039, 1, 1)
 
 [node name="question" type="Label" parent="question_background" unique_id=1368341631]
@@ -71,3 +84,19 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "Question"
+
+[node name="buttonQuit" type="Button" parent="." unique_id=549164939]
+custom_minimum_size = Vector2(100, 100)
+offset_left = 882.0
+offset_top = 12.0
+offset_right = 982.0
+offset_bottom = 112.0
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_e3y3y")
+text = "X"
+
+[connection signal="pressed" from="reveal_answer" to="." method="_on_reveal_answer_pressed"]
+[connection signal="pressed" from="move_right" to="." method="_on_move_right_pressed"]
+[connection signal="pressed" from="move_left" to="." method="_on_move_left_pressed"]
+[connection signal="pressed" from="buttonQuit" to="." method="_on_button_quit_pressed"]

@@ -199,6 +199,18 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
 text = "X"
 
+[node name="study_button" type="Button" parent="." unique_id=1680581166]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 841.0
+offset_top = 268.0
+offset_right = 982.0
+offset_bottom = 404.0
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_xw5fr")
+text = "Study"
+
 [connection signal="pressed" from="VBoxContainer2/button7" to="." method="_on_button_7_pressed"]
 [connection signal="pressed" from="VBoxContainer2/button6" to="." method="_on_button_6_pressed"]
 [connection signal="pressed" from="VBoxContainer2/button5" to="." method="_on_button_5_pressed"]
@@ -213,3 +225,4 @@ text = "X"
 [connection signal="pressed" from="VBoxContainer3/button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="button13bigboss" to="." method="_on_button_13_bigboss_pressed"]
 [connection signal="pressed" from="buttonQuit" to="." method="_on_button_quit_pressed"]
+[connection signal="pressed" from="study_button" to="." method="_on_study_button_pressed"]
