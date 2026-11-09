@@ -1,3 +1,131 @@
 [gd_scene format=3 uid="uid://bbkwh3seqrm6d"]
 
 [node name="Node2D" type="Node2D" unique_id=244424018]
+
+[node name="Background" type="ColorRect" parent="." unique_id=1112218903]
+custom_minimum_size = Vector2(500, 500)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.0
+offset_top = 61.0
+offset_right = 1074.0
+offset_bottom = 743.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.70869976, 0.6562752, 0.8197501, 1)
+
+[node name="Concept Climb" type="Label" parent="Background" unique_id=510920418]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -422.0
+offset_top = 19.0
+offset_right = -177.0
+offset_bottom = -594.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.20784314, 0.10980392, 0.45882353, 1)
+theme_override_font_sizes/font_size = 50
+text = "Questions"
+
+[node name="Concept Climb2" type="Label" parent="Background" unique_id=979399505]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 200.0
+offset_top = 21.0
+offset_right = 380.0
+offset_bottom = -592.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.20784314, 0.10980392, 0.45882353, 1)
+theme_override_font_sizes/font_size = 50
+text = "Answers"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1011453234]
+custom_minimum_size = Vector2(590, 600)
+offset_left = -102.0
+offset_top = 144.0
+offset_right = 319.0
+offset_bottom = 744.0
+theme_override_constants/separation = 47
+alignment = 1
+
+[node name="Question 1" type="Button" parent="VBoxContainer" unique_id=957147473]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "Question 1
+"
+
+[node name="Question 2" type="Button" parent="VBoxContainer" unique_id=645549675]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "Question 2
+"
+
+[node name="Question 3" type="Button" parent="VBoxContainer" unique_id=731121074]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "Question 3
+"
+
+[node name="Question 4" type="Button" parent="VBoxContainer" unique_id=1007686000]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "Question 4
+"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=56036680]
+custom_minimum_size = Vector2(590, 600)
+offset_left = 483.0
+offset_top = 143.0
+offset_right = 1073.0
+offset_bottom = 743.0
+theme_override_constants/separation = 47
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Answer 1" type="Button" parent="VBoxContainer2" unique_id=1088131635]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "Answer 1
+"
+
+[node name="Answer 2" type="Button" parent="VBoxContainer2" unique_id=537669041]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "Answer 2
+"
+
+[node name="Answer 3" type="Button" parent="VBoxContainer2" unique_id=1784952867]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "Answer 3
+"
+
+[node name="Answer 4" type="Button" parent="VBoxContainer2" unique_id=447244462]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "Answer 4
+"
