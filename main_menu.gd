@@ -79,10 +79,14 @@ func _on_button_1_bottom_pressed() -> void:
 	pass # bottom wizard button
 
 func _on_button_3_pressed() -> void:
+	get_tree().change_scene_to_file("res://matching.tscn")
 	print("bottom match")
 	pass # bottom match button
 
-
 func _on_button_quit_pressed() -> void:
 	get_tree().change_scene_to_file("res://start_menu.tscn")
+	pass # Replace with function body.
+
+func _on_study_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://study_scene.tscn")
 	pass # Replace with function body.
