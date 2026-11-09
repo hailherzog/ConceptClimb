@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://b4nlwace64kr"]
+
+[ext_resource type="Script" uid="uid://ce52ifh4475a0" path="res://start_menu.gd" id="1_jwbto"]
+
+[node name="Start Menu" type="Control" unique_id=328359179]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jwbto")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1329142743]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -583.0
+offset_top = -336.0
+offset_right = 593.0
+offset_bottom = 346.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.70869976, 0.6562752, 0.8197501, 1)
+
+[node name="SelectBackground" type="ColorRect" parent="." unique_id=1175289020]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -203.0
+offset_top = -165.0
+offset_right = 203.0
+offset_bottom = 241.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.9828934, 0.8533401, 0.7166028, 1)
+
+[node name="Options" type="VBoxContainer" parent="." unique_id=2136705815]
+custom_minimum_size = Vector2(225, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -112.5
+offset_top = -92.0
+offset_right = 112.5
+offset_bottom = 162.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="Start" type="Button" parent="Options" unique_id=1348047123]
+custom_minimum_size = Vector2(225, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "Start
+"
+
+[node name="Options" type="Button" parent="Options" unique_id=1008757599]
+custom_minimum_size = Vector2(225, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "Options"
+
+[node name="Quit" type="Button" parent="Options" unique_id=494196880]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Quit
+"
+
+[node name="Concept Climb" type="Label" parent="." unique_id=684951534]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -175.0
+offset_top = -258.5
+offset_right = 175.0
+offset_bottom = -189.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.20784314, 0.10980392, 0.45882353, 1)
+theme_override_font_sizes/font_size = 50
+text = "Concept Climb"
+
+[connection signal="pressed" from="Options/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Options/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Options/Quit" to="." method="_on_first_button_pressed"]
