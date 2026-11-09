@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://euyt7ge41vdj"]
+
+[node name="study_scene" type="Node2D" unique_id=1990409757]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=165120645]
+offset_left = -14.0
+offset_top = -15.0
+offset_right = 1020.0
+offset_bottom = 1527.0
+color = Color(1, 0.59607846, 1, 1)
+
+[node name="reveal_answer" type="Button" parent="." unique_id=590805274]
+offset_left = 550.0
+offset_top = 525.0
+offset_right = 849.0
+offset_bottom = 691.0
+theme_override_font_sizes/font_size = 30
+text = "Reveal
+Answer"
+
+[node name="move_right" type="Button" parent="." unique_id=1127815395]
+offset_left = 555.0
+offset_top = 714.0
+offset_right = 652.0
+offset_bottom = 776.0
+theme_override_font_sizes/font_size = 20
+text = "->"
+
+[node name="move_left" type="Button" parent="." unique_id=1748926985]
+offset_left = 451.0
+offset_top = 715.0
+offset_right = 548.0
+offset_bottom = 775.0
+theme_override_font_sizes/font_size = 20
+text = "<-
+"
+
+[node name="location_text" type="Label" parent="." unique_id=2040808346]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 280.0
+offset_top = 428.0
+offset_right = 789.0
+offset_bottom = 483.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 40
+text = "You are on question # of #"
+
+[node name="question_background" type="ColorRect" parent="." unique_id=831113880]
+offset_left = 253.0
+offset_top = 526.0
+offset_right = 521.0
+offset_bottom = 692.0
+color = Color(1, 0.9098039, 1, 1)
+
+[node name="question" type="Label" parent="question_background" unique_id=1368341631]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -66.0
+offset_top = -24.25
+offset_right = 66.0
+offset_bottom = 24.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Question"
