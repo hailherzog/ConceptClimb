@@ -43,7 +43,7 @@ func _on_button_10_pressed() -> void:
 	pass # top squid button
 	
 func _on_button_9_pressed() -> void:
-	print("top wizard")
+	get_tree().change_scene_to_file("res://wizards3.tscn")
 	pass # top wizard button
 	
 func _on_button_11_pressed() -> void:
@@ -59,7 +59,7 @@ func _on_button_7_pressed() -> void:
 	pass # middle squid button
 	
 func _on_button_6_pressed() -> void:
-	print("mid wizard")
+	get_tree().change_scene_to_file("res://wizards2.tscn")
 	pass # middle wizard button
 	
 func _on_button_5_pressed() -> void:
@@ -76,7 +76,6 @@ func _on_button_2_pressed() -> void:
 	
 func _on_button_1_bottom_pressed() -> void:
 	get_tree().change_scene_to_file("res://wizards.tscn")
-	print("bottom wizard")
 	pass # bottom wizard button
 
 func _on_button_3_pressed() -> void:
@@ -85,5 +84,5 @@ func _on_button_3_pressed() -> void:
 
 
 func _on_button_quit_pressed() -> void:
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://start_menu.tscn")
 	pass # Replace with function body.

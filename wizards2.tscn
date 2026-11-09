@@ -1,0 +1,208 @@
+[gd_scene format=3 uid="uid://dsvde4ie5f0o0"]
+
+[ext_resource type="Script" uid="uid://c8gx4c1ev0ayl" path="res://wizards.gd" id="1_tydbu"]
+[ext_resource type="Texture2D" uid="uid://dbxskxphsp076" path="res://culdren.png" id="2_dwnu0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eb7qn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mx2mr"]
+bg_color = Color(0.6741781, 0.4892571, 0.9347867, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e428o"]
+bg_color = Color(0.6741781, 0.4892571, 0.9347867, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[node name="Wizards" type="Control" unique_id=547734160]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tydbu")
+
+[node name="BubbleBox" type="BoxContainer" parent="." unique_id=790636549]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 174.0
+offset_right = 95.0
+offset_bottom = 223.0
+
+[node name="Bubble1" type="ShapeCast2D" parent="BubbleBox" unique_id=1808571316]
+position = Vector2(351, 540)
+scale = Vector2(10, 10)
+shape = SubResource("CircleShape2D_eb7qn")
+target_position = Vector2(0, 0.099998474)
+max_results = 1
+
+[node name="Bubble2" type="ShapeCast2D" parent="BubbleBox" unique_id=1477880033]
+position = Vector2(321.00003, 799)
+scale = Vector2(11, 11)
+shape = SubResource("CircleShape2D_eb7qn")
+target_position = Vector2(0.19999695, 0.30000305)
+max_results = 1
+
+[node name="Bubble3" type="ShapeCast2D" parent="BubbleBox" unique_id=1259922424]
+position = Vector2(484, 769)
+scale = Vector2(11, 11)
+shape = SubResource("CircleShape2D_eb7qn")
+target_position = Vector2(0, 0.090911865)
+max_results = 1
+
+[node name="Bubble4" type="ShapeCast2D" parent="BubbleBox" unique_id=2099415208]
+position = Vector2(554, 857.00006)
+scale = Vector2(11, 11)
+shape = SubResource("CircleShape2D_eb7qn")
+target_position = Vector2(0, 0.090911865)
+max_results = 1
+
+[node name="Bubble5" type="ShapeCast2D" parent="BubbleBox" unique_id=1370340551]
+position = Vector2(368.00006, 734.00006)
+scale = Vector2(5, 5)
+shape = SubResource("CircleShape2D_eb7qn")
+target_position = Vector2(-0.40000916, -0.40000916)
+max_results = 1
+
+[node name="Bubble6" type="ShapeCast2D" parent="BubbleBox" unique_id=1913540461]
+position = Vector2(594, 787)
+scale = Vector2(5, 5)
+shape = SubResource("CircleShape2D_eb7qn")
+target_position = Vector2(0, -0.40000916)
+max_results = 1
+
+[node name="Bubble7" type="ShapeCast2D" parent="BubbleBox" unique_id=2053701542]
+position = Vector2(584, 434)
+scale = Vector2(7, 7)
+shape = SubResource("CircleShape2D_eb7qn")
+target_position = Vector2(0, 0)
+max_results = 1
+
+[node name="Bubble8" type="ShapeCast2D" parent="BubbleBox" unique_id=1542687245]
+position = Vector2(550.00006, 623)
+scale = Vector2(8, 8)
+shape = SubResource("CircleShape2D_eb7qn")
+target_position = Vector2(0.2999916, 0.10000229)
+max_results = 1
+
+[node name="Bubble9" type="ShapeCast2D" parent="BubbleBox" unique_id=558042813]
+position = Vector2(428.00006, 225.00003)
+scale = Vector2(5, 5)
+shape = SubResource("CircleShape2D_eb7qn")
+target_position = Vector2(0.39998627, -0.40000534)
+max_results = 1
+
+[node name="Bubble10" type="ShapeCast2D" parent="BubbleBox" unique_id=979655395]
+position = Vector2(589, 150)
+scale = Vector2(3, 3)
+shape = SubResource("CircleShape2D_eb7qn")
+target_position = Vector2(0, 0.20000076)
+max_results = 1
+
+[node name="Bubble11" type="ShapeCast2D" parent="BubbleBox" unique_id=1515619631]
+position = Vector2(313, 368)
+scale = Vector2(3, 3)
+shape = SubResource("CircleShape2D_eb7qn")
+target_position = Vector2(0, -0.66667175)
+max_results = 1
+
+[node name="Bubble12" type="ShapeCast2D" parent="BubbleBox" unique_id=234435259]
+position = Vector2(409, 75)
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_eb7qn")
+target_position = Vector2(0, -0.33333206)
+max_results = 1
+
+[node name="Bubble13" type="ShapeCast2D" parent="BubbleBox" unique_id=1759953485]
+position = Vector2(708, 590)
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_eb7qn")
+target_position = Vector2(1, -0.5)
+max_results = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="BubbleBox" unique_id=1941482773]
+position = Vector2(417.375, 967.75)
+scale = Vector2(1.4709302, 1.412069)
+texture = ExtResource("2_dwnu0")
+
+[node name="Label" type="Label" parent="." unique_id=106705675]
+layout_mode = 0
+offset_left = 311.0
+offset_top = 65.0
+offset_right = 686.0
+offset_bottom = 188.0
+theme_override_font_sizes/font_size = 75
+text = "QUESTION"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1602998327]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 250.0
+offset_right = 984.0
+offset_bottom = 381.0
+theme_override_constants/separation = 500
+
+[node name="TopLeft" type="Button" parent="HBoxContainer" unique_id=733299671]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_mx2mr")
+text = "Answer 1"
+
+[node name="TopRight" type="Button" parent="HBoxContainer" unique_id=1889875524]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_mx2mr")
+text = "Answer 2"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=2074061469]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 1322.0
+offset_right = 984.0
+offset_bottom = 1457.0
+theme_override_constants/separation = 500
+
+[node name="BottomLeft" type="Button" parent="HBoxContainer2" unique_id=801511590]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_mx2mr")
+text = "Answer 3"
+
+[node name="BottomRight" type="Button" parent="HBoxContainer2" unique_id=1406130551]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_mx2mr")
+text = "Answer 4"
+
+[node name="buttonQuit" type="Button" parent="." unique_id=712386219]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 882.0
+offset_top = 12.0
+offset_right = 982.0
+offset_bottom = 112.0
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_e428o")
+text = "X"
+
+[connection signal="pressed" from="HBoxContainer/TopRight" to="." method="_on_top_right_pressed"]
+[connection signal="pressed" from="buttonQuit" to="." method="_on_button_quit_pressed"]

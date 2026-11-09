@@ -22,4 +22,4 @@ func _on_top_right_pressed() -> void:
 
 
 func _on_button_quit_pressed() -> void:
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://main_menu.tscn")
