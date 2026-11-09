@@ -24,5 +24,5 @@ func _on_move_left_pressed() -> void:
 	pass # Replace with function body.
 
 func _on_button_quit_pressed() -> void:
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://main_menu.tscn")
 	pass # Replace with function body.
