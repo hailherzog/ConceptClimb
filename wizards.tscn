@@ -28,6 +28,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -1.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_31cgu")
@@ -82,6 +84,8 @@ target_position = Vector2(0, -0.40000916)
 max_results = 1
 
 [node name="Bubble7" type="ShapeCast2D" parent="BubbleBox" unique_id=2053701542]
+top_level = true
+visibility_layer = 513
 position = Vector2(584, 434)
 scale = Vector2(7, 7)
 shape = SubResource("CircleShape2D_eb7qn")
@@ -96,10 +100,10 @@ target_position = Vector2(0.2999916, 0.10000229)
 max_results = 1
 
 [node name="Bubble9" type="ShapeCast2D" parent="BubbleBox" unique_id=558042813]
-position = Vector2(428.00006, 225.00003)
+position = Vector2(428, 225)
 scale = Vector2(5, 5)
 shape = SubResource("CircleShape2D_eb7qn")
-target_position = Vector2(0.39998627, -0.40000534)
+target_position = Vector2(0, 0)
 max_results = 1
 
 [node name="Bubble10" type="ShapeCast2D" parent="BubbleBox" unique_id=979655395]
@@ -158,7 +162,7 @@ layout_mode = 2
 theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_mx2mr")
-text = "Answer 1"
+text = "WRONG"
 
 [node name="TopRight" type="Button" parent="HBoxContainer" unique_id=1889875524]
 custom_minimum_size = Vector2(100, 100)
@@ -166,7 +170,7 @@ layout_mode = 2
 theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_mx2mr")
-text = "Answer 2"
+text = "WRONG"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=2074061469]
 layout_mode = 0
@@ -182,7 +186,7 @@ layout_mode = 2
 theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_mx2mr")
-text = "Answer 3"
+text = "  RIGHT  "
 
 [node name="BottomRight" type="Button" parent="HBoxContainer2" unique_id=1406130551]
 custom_minimum_size = Vector2(100, 100)
@@ -190,7 +194,7 @@ layout_mode = 2
 theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_mx2mr")
-text = "Answer 4"
+text = "WRONG"
 
 [node name="buttonQuit" type="Button" parent="." unique_id=712386219]
 custom_minimum_size = Vector2(100, 100)
@@ -204,5 +208,24 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_e428o")
 text = "X"
 
+[node name="Node2D" type="Node2D" parent="." unique_id=1729119476]
+
+[connection signal="draw" from="BubbleBox/Bubble1" to="." method="_on_bubble_1_draw"]
+[connection signal="draw" from="BubbleBox/Bubble2" to="." method="_on_bubble_2_draw"]
+[connection signal="draw" from="BubbleBox/Bubble3" to="." method="_on_bubble_3_draw"]
+[connection signal="draw" from="BubbleBox/Bubble4" to="." method="_on_bubble_4_draw"]
+[connection signal="draw" from="BubbleBox/Bubble5" to="." method="_on_bubble_5_draw"]
+[connection signal="draw" from="BubbleBox/Bubble6" to="." method="_on_bubble_6_draw"]
+[connection signal="draw" from="BubbleBox/Bubble7" to="." method="_on_bubble_7_draw"]
+[connection signal="draw" from="BubbleBox/Bubble8" to="." method="_on_bubble_8_draw"]
+[connection signal="draw" from="BubbleBox/Bubble9" to="." method="_on_bubble_9_draw"]
+[connection signal="draw" from="BubbleBox/Bubble10" to="." method="_on_bubble_10_draw"]
+[connection signal="draw" from="BubbleBox/Bubble11" to="." method="_on_bubble_11_draw"]
+[connection signal="draw" from="BubbleBox/Bubble12" to="." method="_on_bubble_12_draw"]
+[connection signal="draw" from="BubbleBox/Bubble13" to="." method="_on_bubble_13_draw"]
+[connection signal="pressed" from="HBoxContainer/TopLeft" to="." method="_on_top_left_pressed"]
 [connection signal="pressed" from="HBoxContainer/TopRight" to="." method="_on_top_right_pressed"]
+[connection signal="pressed" from="HBoxContainer2/BottomLeft" to="." method="_on_bottom_left_pressed"]
+[connection signal="pressed" from="HBoxContainer2/BottomRight" to="." method="_on_bottom_right_pressed"]
 [connection signal="pressed" from="buttonQuit" to="." method="_on_button_quit_pressed"]
+[connection signal="draw" from="Node2D" to="." method="_on_node_2d_draw"]
