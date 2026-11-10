@@ -1,21 +1,40 @@
 [gd_scene format=3 uid="uid://bbkwh3seqrm6d"]
 
-[node name="Node2D" type="Node2D" unique_id=244424018]
+[ext_resource type="Script" uid="uid://cqsrawtm8jbhb" path="res://matching.gd" id="1_ludmt"]
 
-[node name="Background" type="ColorRect" parent="." unique_id=1112218903]
-custom_minimum_size = Vector2(500, 500)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_up3w7"]
+bg_color = Color(0.6741781, 0.4892571, 0.9347867, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[node name="Control" type="Control" unique_id=395260248]
+layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -102.0
-offset_top = 61.0
-offset_right = 1074.0
-offset_bottom = 743.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ludmt")
+
+[node name="Background" type="ColorRect" parent="." unique_id=784989313]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -91.0
+offset_top = 392.0
+offset_right = 85.0
+offset_bottom = -421.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.70869976, 0.6562752, 0.8197501, 1)
 
-[node name="Concept Climb" type="Label" parent="Background" unique_id=510920418]
+[node name="Concept Climb" type="Label" parent="Background" unique_id=122670484]
 layout_mode = 1
 anchors_preset = 13
 anchor_left = 0.5
@@ -31,7 +50,7 @@ theme_override_colors/font_color = Color(0.20784314, 0.10980392, 0.45882353, 1)
 theme_override_font_sizes/font_size = 50
 text = "Questions"
 
-[node name="Concept Climb2" type="Label" parent="Background" unique_id=979399505]
+[node name="Concept Climb2" type="Label" parent="Background" unique_id=1959086262]
 layout_mode = 1
 anchors_preset = 13
 anchor_left = 0.5
@@ -47,16 +66,29 @@ theme_override_colors/font_color = Color(0.20784314, 0.10980392, 0.45882353, 1)
 theme_override_font_sizes/font_size = 50
 text = "Answers"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1011453234]
+[node name="buttonQuit" type="Button" parent="Background" unique_id=197246730]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 0
+offset_left = 1024.0
+offset_top = 5.0
+offset_right = 1074.0
+offset_bottom = 60.0
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_up3w7")
+text = "X"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1288202782]
 custom_minimum_size = Vector2(590, 600)
-offset_left = -102.0
-offset_top = 144.0
-offset_right = 319.0
-offset_bottom = 744.0
+layout_mode = 0
+offset_left = -91.0
+offset_top = 475.0
+offset_right = 499.0
+offset_bottom = 1075.0
 theme_override_constants/separation = 47
 alignment = 1
 
-[node name="Question 1" type="Button" parent="VBoxContainer" unique_id=957147473]
+[node name="Question 1" type="Button" parent="VBoxContainer" unique_id=542885856]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -64,7 +96,7 @@ theme_override_font_sizes/font_size = 20
 text = "Question 1
 "
 
-[node name="Question 2" type="Button" parent="VBoxContainer" unique_id=645549675]
+[node name="Question 2" type="Button" parent="VBoxContainer" unique_id=613455706]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -72,7 +104,7 @@ theme_override_font_sizes/font_size = 20
 text = "Question 2
 "
 
-[node name="Question 3" type="Button" parent="VBoxContainer" unique_id=731121074]
+[node name="Question 3" type="Button" parent="VBoxContainer" unique_id=1796387980]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -80,7 +112,7 @@ theme_override_font_sizes/font_size = 20
 text = "Question 3
 "
 
-[node name="Question 4" type="Button" parent="VBoxContainer" unique_id=1007686000]
+[node name="Question 4" type="Button" parent="VBoxContainer" unique_id=1945690869]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -88,17 +120,18 @@ theme_override_font_sizes/font_size = 20
 text = "Question 4
 "
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=56036680]
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1423192464]
 custom_minimum_size = Vector2(590, 600)
-offset_left = 483.0
-offset_top = 143.0
-offset_right = 1073.0
-offset_bottom = 743.0
+layout_mode = 0
+offset_left = 494.0
+offset_top = 474.0
+offset_right = 1084.0
+offset_bottom = 1074.0
 theme_override_constants/separation = 47
 alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Answer 1" type="Button" parent="VBoxContainer2" unique_id=1088131635]
+[node name="Answer 1" type="Button" parent="VBoxContainer2" unique_id=1339088154]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -106,7 +139,7 @@ theme_override_font_sizes/font_size = 20
 text = "Answer 1
 "
 
-[node name="Answer 2" type="Button" parent="VBoxContainer2" unique_id=537669041]
+[node name="Answer 2" type="Button" parent="VBoxContainer2" unique_id=1017325495]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -114,7 +147,7 @@ theme_override_font_sizes/font_size = 20
 text = "Answer 2
 "
 
-[node name="Answer 3" type="Button" parent="VBoxContainer2" unique_id=1784952867]
+[node name="Answer 3" type="Button" parent="VBoxContainer2" unique_id=1089182201]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -122,10 +155,20 @@ theme_override_font_sizes/font_size = 20
 text = "Answer 3
 "
 
-[node name="Answer 4" type="Button" parent="VBoxContainer2" unique_id=447244462]
+[node name="Answer 4" type="Button" parent="VBoxContainer2" unique_id=1673793576]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 20
 text = "Answer 4
 "
+
+[connection signal="pressed" from="Background/buttonQuit" to="." method="_on_button_quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/Question 1" to="." method="_on_question_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/Question 2" to="." method="_on_question_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Question 3" to="." method="_on_question_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Question 4" to="." method="_on_question_4_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Answer 1" to="." method="_on_answer_1_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Answer 2" to="." method="_on_answer_2_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Answer 3" to="." method="_on_answer_3_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Answer 4" to="." method="_on_answer_4_pressed"]
