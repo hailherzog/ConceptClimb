@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://b1fv54qg8xe4c"]
+
+[ext_resource type="Script" uid="uid://dongvykvwx8mn" path="res://wizard_interlude.gd" id="1_pft78"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jxb3o"]
+bg_color = Color(0.6741781, 0.4892571, 0.9347867, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[node name="WizardInterlude" type="Control" unique_id=1225931503]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pft78")
+
+[node name="Label" type="Label" parent="." unique_id=1207084796]
+layout_mode = 0
+offset_left = 206.0
+offset_top = 710.0
+offset_right = 841.0
+offset_bottom = 947.0
+theme_override_font_sizes/font_size = 19
+text = "For this mini-game there will be a question at the top of the screen
+and correlating answers will be buttons you can push. If you guess
+the correct answer then the potion will turn or stay green. However, 
+if you get the question wrong the potion will turn red until you get
+the question right. Everytime you get a question right a new question
+will appear at the top of the screen and the answer you clicked will 
+be replaced with a different answer for a leter question until you get
+a certain number of the questions correct."
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1676330243]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 550.0
+offset_right = 997.0
+offset_bottom = 672.0
+theme_override_constants/separation = 500
+
+[node name="buttonMenu" type="Button" parent="HBoxContainer" unique_id=899617714]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_constants/h_separation = 100
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_jxb3o")
+text = "Back to Menu"
+
+[node name="buttonQuit" type="Button" parent="HBoxContainer" unique_id=436673156]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_jxb3o")
+text = "Start Game"
+
+[connection signal="pressed" from="HBoxContainer/buttonMenu" to="." method="_on_button_menu_pressed"]
