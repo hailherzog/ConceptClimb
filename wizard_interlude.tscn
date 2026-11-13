@@ -62,3 +62,4 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_jxb3o")
 text = "Start Game"
 
 [connection signal="pressed" from="HBoxContainer/buttonMenu" to="." method="_on_button_menu_pressed"]
+[connection signal="pressed" from="HBoxContainer/buttonQuit" to="." method="_on_button_quit_pressed"]
