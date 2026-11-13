@@ -48,7 +48,9 @@ func _on_button_9_pressed() -> void:
 	pass # top wizard button
 	
 func _on_button_11_pressed() -> void:
-	print("top match")
+	GameState.selected_button = "button3"
+	get_tree().change_scene_to_file("res://matching_interlude.tscn")
+	
 	pass # top match button
 
 func _on_button_8_boss_2_pressed() -> void:
@@ -65,7 +67,8 @@ func _on_button_6_pressed() -> void:
 	pass # middle wizard button
 	
 func _on_button_5_pressed() -> void:
-	print("mid match")
+	GameState.selected_button = "button2"
+	get_tree().change_scene_to_file("res://matching_interlude.tscn")
 	pass # middle match button
 
 func _on_button_4_boss_1_pressed() -> void:
@@ -82,8 +85,8 @@ func _on_button_1_bottom_pressed() -> void:
 	pass # bottom wizard button
 
 func _on_button_3_pressed() -> void:
-	get_tree().change_scene_to_file("res://matching.tscn")
-	print("bottom match")
+	GameState.selected_button = "button1"
+	get_tree().change_scene_to_file("res://matching_interlude.tscn")
 	pass # bottom match button
 
 func _on_button_quit_pressed() -> void:
