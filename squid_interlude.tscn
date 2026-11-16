@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://c8p2v1whptb66"]
+
+[ext_resource type="Script" uid="uid://dgw1nn8glyhvo" path="res://squid_interlude.gd" id="1_0timp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jxb3o"]
+bg_color = Color(0.6741781, 0.4892571, 0.9347867, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[node name="WizardInterlude" type="Control" unique_id=1225931503]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0timp")
+
+[node name="Label" type="Label" parent="." unique_id=1207084796]
+layout_mode = 0
+offset_left = 206.0
+offset_top = 710.0
+offset_right = 841.0
+offset_bottom = 947.0
+theme_override_font_sizes/font_size = 19
+text = "In this mini-game you will be moving your avatar onto a pane of glass 
+that has a corresponding answer. If you go on the wrong pane of 
+glass and click the sibmit button your character will fall through the 
+glass. Then you will have to try again because that indicated you lost
+the game. You will then be prompted to start again or return to the
+main menu. "
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1676330243]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 550.0
+offset_right = 997.0
+offset_bottom = 672.0
+theme_override_constants/separation = 500
+
+[node name="buttonMenu" type="Button" parent="HBoxContainer" unique_id=899617714]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_constants/h_separation = 100
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_jxb3o")
+text = "Back to Menu"
+
+[node name="buttonQuit" type="Button" parent="HBoxContainer" unique_id=436673156]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_jxb3o")
+text = "Start Game"
+
+[connection signal="pressed" from="HBoxContainer/buttonMenu" to="." method="_on_button_menu_pressed"]
+[connection signal="pressed" from="HBoxContainer/buttonQuit" to="." method="_on_button_quit_pressed"]

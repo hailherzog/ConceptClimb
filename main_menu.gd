@@ -39,7 +39,8 @@ func _on_button_12_boss_3_pressed() -> void:
 	pass # third boss button
 
 func _on_button_10_pressed() -> void:
-	print("top squid")
+	GameState.selected_button = "button3"
+	get_tree().change_scene_to_file("res://squid_interlude.tscn")
 	pass # top squid button
 	
 func _on_button_9_pressed() -> void:
@@ -58,7 +59,8 @@ func _on_button_8_boss_2_pressed() -> void:
 	pass # second boss button
 	
 func _on_button_7_pressed() -> void:
-	print("mid squid")
+	GameState.selected_button = "button2"
+	get_tree().change_scene_to_file("res://squid_interlude.tscn")
 	pass # middle squid button
 	
 func _on_button_6_pressed() -> void:
@@ -76,7 +78,8 @@ func _on_button_4_boss_1_pressed() -> void:
 	pass # first boss button
 
 func _on_button_2_pressed() -> void:
-	print("bottom squid")
+	GameState.selected_button = "button1"
+	get_tree().change_scene_to_file("res://squid_interlude.tscn")
 	pass # bottom squid button
 	
 func _on_button_1_bottom_pressed() -> void:

@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://c3j1kjluhpc6n"]
+
+[ext_resource type="Script" uid="uid://qfc4bh7em0qp" path="res://character_body_2d.gd" id="1_0mi87"]
+[ext_resource type="Script" uid="uid://brvuqlymmlvrs" path="res://squid.gd" id="1_p6pwp"]
+[ext_resource type="Texture2D" uid="uid://unjn0mexb5l8" path="res://characher.png" id="2_p6pwp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xw5fr"]
+size = Vector2(1007, 460)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pe1ms"]
+bg_color = Color(0.6741781, 0.4892571, 0.9347867, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[node name="Squid" type="Node2D" unique_id=746113815]
+script = ExtResource("1_p6pwp")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1095183385]
+script = ExtResource("1_0mi87")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=673379005]
+position = Vector2(361, 971)
+texture = ExtResource("2_p6pwp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2131857593]
+position = Vector2(498, 955)
+shape = SubResource("RectangleShape2D_xw5fr")
+
+[node name="buttonQuit" type="Button" parent="." unique_id=732434574]
+custom_minimum_size = Vector2(100, 100)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 898.0
+offset_top = 2.0
+offset_right = 998.0
+offset_bottom = 102.0
+grow_horizontal = 0
+theme_override_colors/font_focus_color = Color(0.20784314, 0.40784314, 0.5019608, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_pe1ms")
+text = "X"
+
+[connection signal="pressed" from="buttonQuit" to="." method="_on_button_quit_pressed"]
